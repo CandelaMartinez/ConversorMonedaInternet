@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ConversorMonedaInternet</string>
+    <string name="tvMonedaCambio">Moneda Cambio</string>
+    <string name="etValorAConvertir">Introduce el valor a convertir</string>
+    <string name="bConvertir">Convertir</string>
+    <string name="tvConvertido">Valor Convertido</string>
+    <string name="bTodasMonedasCM">Ver Monedas</string>
+</resources>

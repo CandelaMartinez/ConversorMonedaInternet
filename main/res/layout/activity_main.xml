@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="720dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvMonedaCambioCM"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="@string/tvMonedaCambio"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Spinner
+            android:id="@+id/spMonedaCambioCM"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center|center_horizontal|center_vertical" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/etValorAConvertirCM"
+            android:layout_width="241dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:gravity="center|center_horizontal"
+            android:hint="@string/etValorAConvertir"
+            android:inputType="numberDecimal" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/bConvertirCM"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:onClick="convertirMoneda"
+            android:text="@string/bConvertir"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/tvConvertidoCM"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:hint="@string/tvConvertido"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+        <Button
+            android:id="@+id/bTodasMonedasCM"
+            android:layout_width="213dp"
+            android:layout_height="50dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:onClick="MostrasTodas"
+            android:text="@string/bTodasMonedasCM" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
